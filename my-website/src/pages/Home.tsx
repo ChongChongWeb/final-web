@@ -10,7 +10,9 @@ import { ExpandableCardDemo } from '@/components/grid';
 import MusicPlayer from '@/components/ui/player'; // 确保路径正确
 import BookComponent from '@/components/Booker'; // 引入新的 BookComponent
 import { AnimatedListDemo } from '@/components/poppage';
-
+import thumbnailImg from '@/assets/chong.png'
+import floatingImg from '@/assets/chong123.png'
+import chongGifImg from '@/assets/img/chong1.gif'
 
 
 
@@ -51,7 +53,7 @@ const Home: React.FC = () => {
               {/* 图片 */}
               <CardItem translateZ="100" className="mt-8 flex justify-center">
                 <img
-                  src="src/assets/chong.png"
+                  src={thumbnailImg}
                   style={{ height: '18rem', width: '18rem', borderRadius: '0.5rem', objectFit: 'cover' }}
                   alt="thumbnail" />
               </CardItem>
@@ -114,7 +116,7 @@ const Home: React.FC = () => {
                 "figma",
               ]} />
             <img
-              src="src/assets/chong123.png"
+              src={floatingImg}
               className="w-100 h-100 object-contain absolute bottom-1 left-1/2 transform -translate-x-[80%] translate-y-[-30%] z-10"
               alt="floating" />
           </div>
@@ -159,7 +161,7 @@ const Home: React.FC = () => {
     overflow: 'hidden', // 确保 GIF 不超出边界
   }}
 >
-  <img src="src/assets/img/chong.GIF" alt="Reading GIF" style={{ width: '100%', height: '100%' }} />
+  <img src={chongGifImg} alt="Reading GIF" style={{ width: '100%', height: '100%' }} />
 </div>
       </div>
 

@@ -1,5 +1,11 @@
 import React, { useState, useRef, useEffect } from 'react';
+import MekanınSahibiImg from '@/assets/img/1.jpg'
+import Track2Img from '@/assets/img/2.jpg'
+import Track3Img from '@/assets/img/3.jpg'
 
+import MekanınSahibiMp3 from '@/assets/mp3/1.mp3'
+import Track2Mp3 from '@/assets/mp3/2.mp3'
+import Track3Mp3 from '@/assets/mp3/3.mp3'
 
 interface Track {
     name: string;
@@ -14,9 +20,9 @@ interface Track {
 
 const MusicPlayer: React.FC = () => {
     const [tracks, setTracks] = useState<Track[]>([
-        { name: "Mekanın Sahibi", artist: "Norm Ender", cover: "src/assets/img/1.jpg", source: "src/assets/mp3/1.mp3", url: "https://y.qq.com/n/ryqq/songDetail/0038tY9N3dPrG5", favorited: true },
-        { name: "Track 2", artist: "Artist 2", cover: "src/assets/img/2.jpg", source: "src/assets/mp3/2.mp3", url: "https://y.qq.com/n/ryqq/songDetail/0038tY9N3dPrG5", favorited: true },
-        { name: "Track 3", artist: "Artist 3", cover: "src/assets/img/3.jpg", source: "src/assets/mp3/3.mp3", url: "https://y.qq.com/n/ryqq/songDetail/0038tY9N3dPrG5", favorited: true }
+        { name: "Mekanın Sahibi", artist: "Norm Ender", cover: MekanınSahibiImg, source: MekanınSahibiMp3, url: "https://y.qq.com/n/ryqq/songDetail/0038tY9N3dPrG5", favorited: true },
+        { name: "Track 2", artist: "Artist 2", cover: Track2Img, source: Track2Mp3, url: "https://y.qq.com/n/ryqq/songDetail/0038tY9N3dPrG5", favorited: true },
+        { name: "Track 3", artist: "Artist 3", cover: Track3Img, source: Track3Mp3, url: "https://y.qq.com/n/ryqq/songDetail/0038tY9N3dPrG5", favorited: true }
     ]);
 
     const [currentTrackIndex, setCurrentTrackIndex] = useState<number>(0);
