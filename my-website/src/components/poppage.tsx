@@ -34,7 +34,7 @@ let notifications = [
     name: "七神520",
     description: "冲神神了！",
     time: "1m ago",
-    icon: "🤬",
+    icon: "😘",
     color: getRandomColor(),
   },
   {
