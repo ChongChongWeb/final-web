@@ -31,8 +31,8 @@ let notifications = [
     color:  getRandomColor(),
   },
   {
-    name: "东狗",
-    description: "冲神下把带我打大乱斗！",
+    name: "七神520",
+    description: "冲神神了！",
     time: "1m ago",
     icon: "🤬",
     color: getRandomColor(),
